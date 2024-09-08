@@ -53,7 +53,7 @@ COLA架构就是为此而生，其核心职责就是定义良好的应用结构�
 
 COLA架构区别于这些架构的地方，在于除了思想之外，我们还提供了可落地的工具和实践指导。
 
-为了能够快速创建满足COLA架构的应用，我们提供了两个`archetype`，位于[`cola-archetypes`目录](cola-archetypes)下：
+为了能够快速创建满足COLA架构的应用，我们提供了两个`archetype`，位于[`colx-archetype`目录](colx-archetype)下：
 
 1. `cola-archetype-service`：用来创建纯后端服务的`archetype`。
 2. `cola-archetype-web`：用来创建`adapter`和后端服务一体的`web`应用`archetype`。
