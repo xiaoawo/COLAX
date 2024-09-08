@@ -1,5 +1,7 @@
 package com.alibaba.cola.exception;
 
+import com.alibaba.cola.dto.exception.BizException;
+
 import java.util.Collection;
 import java.util.Map;
 
@@ -23,7 +25,8 @@ import java.util.Map;
  * @author Frank Zhang
  * @date 2019-01-13 11:49 AM
  */
-public abstract class Assert {
+public final class Assert {
+    private Assert() {}
 
     /**
      * Assert a boolean expression, throwing {@code BizException}
@@ -33,13 +36,11 @@ public abstract class Assert {
      * <pre class="code">Assert.isTrue(i != 0, errorCode.B_ORDER_illegalNumber, "The order number can not be zero");</pre>
      *
      * @param expression a boolean expression
-     * @param errorCode
-     * @param errMessage the exception message to use if the assertion fails
      * @throws BizException if expression is {@code false}
      */
-    public static void isTrue(boolean expression, String errorCode, String errMessage) {
+    public static void isTrue(boolean expression, ErrorMessage errorMessage, Object... args) {
         if (!expression) {
-            throw new BizException(errorCode, errMessage);
+            throw Exceptions.bizException(errorMessage, args);
         }
     }
 
@@ -52,21 +53,21 @@ public abstract class Assert {
      *
      * This is more intuitive than isTure.
      */
-    public static void isFalse(boolean expression, String errorCode, String errMessage) {
+    public static void isFalse(boolean expression, ErrorMessage errorMessage, Object... args) {
         if (expression) {
-            throw new BizException(errorCode, errMessage);
+            throw Exceptions.bizException(errorMessage, args);
         }
     }
 
-    public static void isTrue(boolean expression, String errMessage) {
+    public static void isTrue(boolean expression, String message) {
         if (!expression) {
-            throw new BizException(errMessage);
+            throw Exceptions.bizException(message);
         }
     }
 
-    public static void isFalse(boolean expression, String errMessage) {
+    public static void isFalse(boolean expression, String message) {
         if (expression) {
-            throw new BizException(errMessage);
+            throw Exceptions.bizException(message);
         }
     }
 
@@ -78,15 +79,15 @@ public abstract class Assert {
         isFalse(expression, "[Assertion failed] Must be false");
     }
 
-    public static void notNull(Object object, String errorCode, String errMessage) {
+    public static void notNull(Object object, ErrorMessage errorMessage, Object... args) {
         if (object == null) {
-            throw new BizException(errorCode, errMessage);
+            throw Exceptions.bizException(errorMessage, args);
         }
     }
 
-    public static void notNull(Object object, String errMessage) {
+    public static void notNull(Object object, String message) {
         if (object == null) {
-            throw new BizException(errMessage);
+            throw Exceptions.bizException(message);
         }
     }
 
@@ -94,15 +95,15 @@ public abstract class Assert {
         notNull(object, "[Assertion failed] Must not null");
     }
 
-    public static void notEmpty(Collection<?> collection, String errorCode, String errMessage) {
+    public static void notEmpty(Collection<?> collection, ErrorMessage errorMessage, Object... args) {
         if (collection == null || collection.isEmpty()) {
-            throw new BizException(errorCode, errMessage);
+            throw Exceptions.bizException(errorMessage, args);
         }
     }
 
-    public static void notEmpty(Collection<?> collection, String errMessage) {
+    public static void notEmpty(Collection<?> collection, String message) {
         if (collection == null || collection.isEmpty()) {
-            throw new BizException(errMessage);
+            throw Exceptions.bizException(message);
         }
     }
 
@@ -110,15 +111,15 @@ public abstract class Assert {
         notEmpty(collection, "[Assertion failed] Collection must not be empty: it must contain at least 1 element");
     }
 
-    public static void notEmpty(Map<?, ?> map, String errorCode, String errMessage) {
+    public static void notEmpty(Map<?, ?> map, ErrorMessage errorMessage, Object... args) {
         if (map == null || map.isEmpty()) {
-            throw new BizException(errorCode, errMessage);
+            throw Exceptions.bizException(errorMessage, args);
         }
     }
 
-    public static void notEmpty(Map<?, ?> map, String errMessage) {
+    public static void notEmpty(Map<?, ?> map, String message) {
         if (map == null || map.isEmpty()) {
-            throw new BizException(errMessage);
+            throw Exceptions.bizException(message);
         }
     }
 
