@@ -5,7 +5,7 @@
 
     <groupId>com.alibaba.cola</groupId>
     <artifactId>colax-components</artifactId>
-    <version>5.x-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <description>${project.artifactId}</description>
@@ -53,16 +53,10 @@
     </developers>
 
     <modules>
-        <module>cola-component-dto</module>
-        <module>cola-component-exception</module>
-        <module>cola-component-statemachine</module>
-        <module>cola-component-domain-starter</module>
-        <module>cola-component-extension-starter</module>
-        <module>cola-component-catchlog-starter</module>
-        <module>cola-component-test-container</module>
-        <module>colax-components-bom</module>
-        <module>cola-component-ruleengine</module>
-        <module>cola-component-unittest</module>
+        <module>colax-component-dto</module>
+        <module>colax-component-exception</module>
+        <module>colax-component-domain-starter</module>
+        <module>colax-component-catchlog-starter</module>
     </modules>
 
     <properties>

@@ -16,7 +16,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>cola-components</module>
+        <module>colax-components</module>
         <module>colax-archetype</module>
     </modules>
 </project>
