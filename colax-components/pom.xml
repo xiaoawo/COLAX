@@ -53,6 +53,7 @@
     </developers>
 
     <modules>
+        <module>colax-component-util</module>
         <module>colax-component-dto</module>
         <module>colax-component-exception</module>
         <module>colax-component-domain-starter</module>
