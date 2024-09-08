@@ -1,4 +1,4 @@
-package com.alibaba.cola.exception;
+package com.github.xiaowo.util.exception;
 
 public interface ErrorMessage {
 	String getCode();

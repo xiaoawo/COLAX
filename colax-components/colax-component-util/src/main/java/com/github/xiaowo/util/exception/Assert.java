@@ -1,4 +1,4 @@
-package com.alibaba.cola.exception;
+package com.github.xiaowo.util.exception;
 
 import com.alibaba.cola.dto.exception.BizException;
 

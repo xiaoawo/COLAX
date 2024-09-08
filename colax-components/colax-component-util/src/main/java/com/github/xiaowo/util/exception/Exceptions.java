@@ -1,9 +1,10 @@
-package com.alibaba.cola.exception;
+package com.github.xiaowo.util.exception;
 
 
 import com.alibaba.cola.dto.exception.BizException;
 import com.alibaba.cola.dto.exception.SysException;
 import com.github.xiaowo.util.MessageFormatter;
+import com.github.xiaowo.util.exception.ErrorMessage;
 
 public final class Exceptions {
 	private Exceptions() {}
