@@ -55,9 +55,8 @@
     <modules>
         <module>colax-component-util</module>
         <module>colax-component-dto</module>
-        <module>colax-component-exception</module>
         <module>colax-component-domain-starter</module>
-        <module>colax-component-catchlog-starter</module>
+        <module>colax-component-helper-starter</module>
     </modules>
 
     <properties>
