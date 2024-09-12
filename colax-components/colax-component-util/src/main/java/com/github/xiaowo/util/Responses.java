@@ -1,8 +1,12 @@
-package com.alibaba.cola.dto.response;
+package com.github.xiaowo.util;
 
 
 import com.alibaba.cola.dto.exception.BaseException;
 import com.alibaba.cola.dto.page.PageInfo;
+import com.alibaba.cola.dto.response.MultiResponse;
+import com.alibaba.cola.dto.response.PageResponse;
+import com.alibaba.cola.dto.response.Response;
+import com.alibaba.cola.dto.response.SingleResponse;
 
 import java.util.Collection;
 
