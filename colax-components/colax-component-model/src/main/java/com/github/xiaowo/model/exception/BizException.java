@@ -1,4 +1,4 @@
-package com.github.xiaowo.dto.exception;
+package com.github.xiaowo.model.exception;
 
 /**
  * BizException is known Exception, no need retry

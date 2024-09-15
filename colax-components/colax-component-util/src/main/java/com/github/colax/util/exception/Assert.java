@@ -1,6 +1,6 @@
 package com.github.colax.util.exception;
 
-import com.github.xiaowo.dto.exception.BizException;
+import com.github.xiaowo.model.exception.BizException;
 
 import java.util.Collection;
 import java.util.Map;

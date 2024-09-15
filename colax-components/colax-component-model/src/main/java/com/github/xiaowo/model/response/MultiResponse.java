@@ -1,11 +1,9 @@
-package com.github.xiaowo.dto.response;
+package com.github.xiaowo.model.response;
 
-import com.github.xiaowo.dto.exception.BaseException;
+import com.github.xiaowo.model.exception.BaseException;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.List;
 
 /**
  * Response with batch record to return,

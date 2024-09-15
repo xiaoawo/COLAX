@@ -1,8 +1,8 @@
 package com.github.colax.util.exception;
 
 
-import com.github.xiaowo.dto.exception.BizException;
-import com.github.xiaowo.dto.exception.SysException;
+import com.github.xiaowo.model.exception.BizException;
+import com.github.xiaowo.model.exception.SysException;
 import com.github.colax.util.MessageFormatter;
 
 public final class Exceptions {

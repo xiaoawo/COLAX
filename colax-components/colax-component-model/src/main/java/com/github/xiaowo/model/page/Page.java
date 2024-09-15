@@ -1,4 +1,4 @@
-package com.github.xiaowo.dto.page;
+package com.github.xiaowo.model.page;
 
 import java.io.Serializable;
 

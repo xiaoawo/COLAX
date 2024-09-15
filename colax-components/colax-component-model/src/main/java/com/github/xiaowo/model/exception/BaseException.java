@@ -1,4 +1,4 @@
-package com.github.xiaowo.dto.exception;
+package com.github.xiaowo.model.exception;
 
 /**
  * Base Exception is the parent of all exceptions

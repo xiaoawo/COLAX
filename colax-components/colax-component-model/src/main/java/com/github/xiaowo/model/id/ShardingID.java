@@ -1,4 +1,4 @@
-package com.github.xiaowo.dto.id;
+package com.github.xiaowo.model.id;
 
 import java.util.Objects;
 

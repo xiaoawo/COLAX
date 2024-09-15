@@ -1,4 +1,4 @@
-package com.github.xiaowo.dto.exception;
+package com.github.xiaowo.model.exception;
 
 /**
  * System Exception is unexpected Exception, retry might work again

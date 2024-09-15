@@ -27,7 +27,7 @@
         </dependency>
         <dependency>
             <groupId>com.alibaba.cola</groupId>
-            <artifactId>colax-component-dto</artifactId>
+            <artifactId>colax-component-model</artifactId>
             <version>1.0.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>

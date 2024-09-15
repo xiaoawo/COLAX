@@ -1,8 +1,8 @@
-package com.github.xiaowo.dto.response;
+package com.github.xiaowo.model.response;
 
-import com.github.xiaowo.dto.page.Page;
-import com.github.xiaowo.dto.exception.BaseException;
-import com.github.xiaowo.dto.page.PageCollection;
+import com.github.xiaowo.model.page.Page;
+import com.github.xiaowo.model.exception.BaseException;
+import com.github.xiaowo.model.page.PageCollection;
 
 import java.util.Collection;
 import java.util.Collections;

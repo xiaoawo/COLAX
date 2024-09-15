@@ -7,7 +7,7 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>colax-component-dto</artifactId>
+    <artifactId>colax-component-model</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
     <description>${project.artifactId}</description>
