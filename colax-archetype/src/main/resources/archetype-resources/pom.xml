@@ -42,7 +42,12 @@
             </dependency>
             <dependency>
                 <groupId>${groupId}</groupId>
-                <artifactId>${rootArtifactId}-client</artifactId>
+                <artifactId>${rootArtifactId}-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${groupId}</groupId>
+                <artifactId>${rootArtifactId}-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>

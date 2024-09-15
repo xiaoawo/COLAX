@@ -8,9 +8,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>${rootArtifactId}-client</artifactId>
+    <artifactId>${rootArtifactId}-model</artifactId>
     <packaging>jar</packaging>
-    <name>${rootArtifactId}-client</name>
+    <name>${rootArtifactId}-model</name>
 
     <dependencies>
         <dependency>

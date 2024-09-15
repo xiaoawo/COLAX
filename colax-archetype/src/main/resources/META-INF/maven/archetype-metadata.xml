@@ -29,7 +29,17 @@
     </fileSet>
   </fileSets>
   <modules>
-    <module id="${rootArtifactId}-client" dir="__rootArtifactId__-client" name="${rootArtifactId}-client">
+    <module id="${rootArtifactId}-api" dir="__rootArtifactId__-api" name="${rootArtifactId}-api">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-model" dir="__rootArtifactId__-model" name="${rootArtifactId}-model">
       <fileSets>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
           <directory>src/main/java</directory>
@@ -135,59 +145,19 @@
     </module>
     <module id="${rootArtifactId}-common" dir="__rootArtifactId__-common" name="${rootArtifactId}-common">
       <fileSets>
-        <fileSet encoding="UTF-8">
-          <directory></directory>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
           <includes>
-            <include>.gitignore</include>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/test/java</directory>
+          <includes>
+            <include>**/*.java</include>
           </includes>
         </fileSet>
       </fileSets>
-      <modules>
-        <module id="${rootArtifactId}-common-external" dir="__rootArtifactId__-common-external" name="${rootArtifactId}-common-external">
-          <fileSets>
-            <fileSet filtered="true" packaged="true" encoding="UTF-8">
-              <directory>src/main/java</directory>
-              <includes>
-                <include>**/*.java</include>
-              </includes>
-            </fileSet>
-            <fileSet filtered="true" packaged="true" encoding="UTF-8">
-              <directory>src/test/java</directory>
-              <includes>
-                <include>**/*.java</include>
-              </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-              <directory></directory>
-              <includes>
-                <include>.gitignore</include>
-              </includes>
-            </fileSet>
-          </fileSets>
-        </module>
-        <module id="${rootArtifactId}-common-internal" dir="__rootArtifactId__-common-internal" name="${rootArtifactId}-common-internal">
-          <fileSets>
-            <fileSet filtered="true" packaged="true" encoding="UTF-8">
-              <directory>src/main/java</directory>
-              <includes>
-                <include>**/*.java</include>
-              </includes>
-            </fileSet>
-            <fileSet filtered="true" packaged="true" encoding="UTF-8">
-              <directory>src/test/java</directory>
-              <includes>
-                <include>**/*.java</include>
-              </includes>
-            </fileSet>
-            <fileSet encoding="UTF-8">
-              <directory></directory>
-              <includes>
-                <include>.gitignore</include>
-              </includes>
-            </fileSet>
-          </fileSets>
-        </module>
-      </modules>
     </module>
   </modules>
 </archetype-descriptor>
