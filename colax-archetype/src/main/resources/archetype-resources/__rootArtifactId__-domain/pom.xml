@@ -17,6 +17,10 @@
             <groupId>${groupId}</groupId>
             <artifactId>${rootArtifactId}-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>${groupId}</groupId>
+            <artifactId>${rootArtifactId}-model</artifactId>
+        </dependency>
 
         <!-- COLA components -->
         <!-- COLA components End-->
