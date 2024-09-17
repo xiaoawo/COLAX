@@ -1,8 +1,8 @@
 package com.github.colax.catchlog;
 
 
-import com.github.xiaowo.dto.response.Response;
-import com.github.xiaowo.dto.exception.BaseException;
+import com.github.colax.model.response.Response;
+import com.github.colax.model.exception.BaseException;
 import lombok.extern.slf4j.Slf4j;
 
 /**

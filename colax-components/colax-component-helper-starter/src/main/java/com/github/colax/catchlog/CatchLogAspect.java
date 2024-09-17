@@ -1,7 +1,7 @@
 package com.github.colax.catchlog;
 
-import com.github.xiaowo.dto.exception.BizException;
-import com.github.xiaowo.dto.exception.SysException;
+import com.github.colax.model.exception.BizException;
+import com.github.colax.model.exception.SysException;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import lombok.extern.slf4j.Slf4j;
