@@ -1,9 +1,9 @@
 package com.github.colax.util.page;
 
 
-import com.github.xiaowo.model.page.Page;
-import com.github.xiaowo.model.page.PageCollection;
-import com.github.xiaowo.model.page.PageScanner;
+import com.github.colax.model.page.Page;
+import com.github.colax.model.page.PageCollection;
+import com.github.colax.model.page.PageScanner;
 
 import java.util.function.Function;
 

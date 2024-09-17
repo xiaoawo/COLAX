@@ -1,13 +1,13 @@
 package com.github.colax.util;
 
 
-import com.github.xiaowo.model.exception.BaseException;
-import com.github.xiaowo.model.page.Page;
-import com.github.xiaowo.model.page.PageCollection;
-import com.github.xiaowo.model.response.MultiResponse;
-import com.github.xiaowo.model.response.PageResponse;
-import com.github.xiaowo.model.response.Response;
-import com.github.xiaowo.model.response.SingleResponse;
+import com.github.colax.model.exception.BaseException;
+import com.github.colax.model.page.Page;
+import com.github.colax.model.page.PageCollection;
+import com.github.colax.model.response.MultiResponse;
+import com.github.colax.model.response.PageResponse;
+import com.github.colax.model.response.Response;
+import com.github.colax.model.response.SingleResponse;
 
 import java.util.Collection;
 
