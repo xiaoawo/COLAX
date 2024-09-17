@@ -1,6 +1,6 @@
-package com.github.xiaowo.model.response;
+package com.github.colax.model.response;
 
-import com.github.xiaowo.model.exception.BaseException;
+import com.github.colax.model.exception.BaseException;
 
 import java.util.Collection;
 import java.util.Collections;

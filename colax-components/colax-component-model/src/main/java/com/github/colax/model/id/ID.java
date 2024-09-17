@@ -1,4 +1,4 @@
-package com.github.xiaowo.model.id;
+package com.github.colax.model.id;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package com.github.xiaowo.model.page;
+package com.github.colax.model.page;
 
 
 import java.util.*;

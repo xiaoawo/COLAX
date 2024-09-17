@@ -1,7 +1,7 @@
-package com.github.xiaowo.model.page;
+package com.github.colax.model.page;
 
 
-import com.github.xiaowo.model.iterator.Scanner;
+import com.github.colax.model.iterator.Scanner;
 
 import java.util.Collection;
 import java.util.Iterator;

@@ -1,4 +1,4 @@
-package com.github.xiaowo.model.iterator;
+package com.github.colax.model.iterator;
 
 
 import java.util.Iterator;

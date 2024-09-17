@@ -1,4 +1,4 @@
-package com.github.xiaowo.model.exception;
+package com.github.colax.model.exception;
 
 /**
  * Base Exception is the parent of all exceptions
