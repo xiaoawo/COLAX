@@ -55,7 +55,6 @@
     <modules>
         <module>colax-component-util</module>
         <module>colax-component-model</module>
-        <module>colax-component-domain-starter</module>
         <module>colax-component-helper-starter</module>
     </modules>
 
