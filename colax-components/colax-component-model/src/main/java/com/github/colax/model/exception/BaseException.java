@@ -30,4 +30,8 @@ public class BaseException extends RuntimeException {
     public String getErrorCode() {
         return code;
     }
+
+    public String toString() {
+        return String.format("%s: %s", code, getMessage());
+    }
 }

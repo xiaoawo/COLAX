@@ -10,6 +10,6 @@ import com.github.colax.helper.gate.filter.GateFilter;
 public class GateFilterCoreWrapper extends GateFilterWrapper {
 
 	public GateFilterCoreWrapper() {
-		super(null, null, null);
+		super(null, null);
 	}
 }
