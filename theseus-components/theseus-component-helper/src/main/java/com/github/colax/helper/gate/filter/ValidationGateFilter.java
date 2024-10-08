@@ -1,7 +1,7 @@
 package com.github.colax.helper.gate.filter;
 
 import com.github.colax.helper.gate.GateKeeper;
-import com.github.colax.util.validation.Validations;
+import com.myth.theseus.util.validation.Validations;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.springframework.stereotype.Component;
 

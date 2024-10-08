@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
 
-@Component("colaCatchLogApplicationContextHelper")
+@Component("theseusApplicationContextHelper")
 @Slf4j
 public class ApplicationContextHelper implements ApplicationContextAware {
     private static ApplicationContext applicationContext;
