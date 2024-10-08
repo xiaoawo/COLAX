@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * @author Frank Zhang
  */
-@SpringBootApplication(scanBasePackages = {"${package}", "com.alibaba.cola"})
+@SpringBootApplication(scanBasePackages = {"${package}"})
 public class Application {
 
     public static void main(String[] args) {
