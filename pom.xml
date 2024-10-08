@@ -17,6 +17,6 @@
 
     <modules>
         <module>theseus-components</module>
-        <module>colax-archetype</module>
+        <module>ark-archetype</module>
     </modules>
 </project>

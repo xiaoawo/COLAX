@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration = com.github.colax.helper.HelperAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration = com.myth.theseus.helper.HelperAutoConfiguration
