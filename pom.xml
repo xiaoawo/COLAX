@@ -11,12 +11,12 @@
         - import to IDE
     -->
     <groupId>com.alibaba.cola</groupId>
-    <artifactId>colax</artifactId>
+    <artifactId>myth</artifactId>
     <version>dummy-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>colax-components</module>
+        <module>theseus-components</module>
         <module>colax-archetype</module>
     </modules>
 </project>
