@@ -1,7 +1,11 @@
 package com.myth.theseus.model.page;
 
 
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class PageList<E> implements PageCollection<E>{
 	private final Page page;
@@ -34,5 +38,11 @@ public class PageList<E> implements PageCollection<E>{
 	@Override
 	public int count() {
 		return count;
+	}
+
+	@Override
+	public <R> PageCollection<R> convert(Function<E, R> convertor) {
+		List<R> newData = this.getData().stream().map(convertor).collect(Collectors.toList());
+		return new PageList<>(page, count, newData);
 	}
 }
