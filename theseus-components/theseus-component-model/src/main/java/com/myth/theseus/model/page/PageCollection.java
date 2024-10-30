@@ -3,7 +3,6 @@ package com.myth.theseus.model.page;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.Collection;
-import java.util.Collections;
 import java.util.function.Function;
 
 public interface PageCollection<E> {
