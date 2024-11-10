@@ -12,6 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.Map;
+import java.util.Optional;
 
 
 @Configuration
@@ -23,12 +24,12 @@ public class HelperAutoConfiguration {
 	private GateProperties gateProperties;
 
 	@Resource
-
 	private Map<String, GateFilter> gateFilterMap;
 
 	@Bean
 	@ConditionalOnMissingBean
 	public GateAspect gateAspect() {
-		return new GateAspect(GateFilterWrappers.buildGateFilterWrapperChain(gateFilterMap, gateProperties.getFilters()));
+		return new GateAspect(GateFilterWrappers.buildGateFilterWrapperChain(gateFilterMap,
+				Optional.ofNullable(gateProperties).map(GateProperties::getFilters).orElse(null)));
 	}
 }
