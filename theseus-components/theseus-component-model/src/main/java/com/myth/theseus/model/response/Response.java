@@ -19,12 +19,15 @@ public class Response implements Serializable {
 
     @Override
     public String toString() {
+        if (success) {
+            return "Response [success=" + success + "]";
+        }
         return "Response [success=" + success + ", errorCode=" + error.getErrorCode() + ", errorMessage=" + error.getMessage() + "]";
     }
 
     public Response() {
         this.success = true;
-        this.error = BaseException.EMPTY_ERROR;
+        this.error = null;
     }
 
     public Response(BaseException error) {
