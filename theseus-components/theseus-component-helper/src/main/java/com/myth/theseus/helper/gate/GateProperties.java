@@ -16,4 +16,8 @@ public class GateProperties {
 
 		return filters;
 	}
+
+	public void setFilters(String[] filters) {
+		this.filters = filters;
+	}
 }
