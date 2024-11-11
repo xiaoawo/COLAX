@@ -4,11 +4,14 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix = "myth.theseus.gate")
 public class GateProperties {
+
+	private static final String[] DEFAULT_FILTERS = {"entranceLogGateFilter", "validationGateFilter"};
+
 	private String[] filters;
 
 	public String[] getFilters() {
 		if (filters == null) {
-			return new String[]{};
+			return DEFAULT_FILTERS;
 		}
 
 		return filters;
