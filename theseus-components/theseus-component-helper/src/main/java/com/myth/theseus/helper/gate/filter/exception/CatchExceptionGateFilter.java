@@ -7,11 +7,11 @@ import com.myth.theseus.helper.gate.filter.exception.handler.ResponseHandler;
 import com.myth.theseus.model.exception.BaseException;
 import com.myth.theseus.util.Responses;
 import com.myth.theseus.util.exception.Exceptions;
-import jakarta.annotation.Resource;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Component
