@@ -15,31 +15,31 @@ public class Response implements Serializable {
 
     private final boolean success;
 
-    private final BaseException error;
+    private final ErrorMessage errorMessage;
 
     @Override
     public String toString() {
         if (success) {
             return "Response [success=" + success + "]";
         }
-        return "Response [success=" + success + ", errorCode=" + error.getErrorCode() + ", errorMessage=" + error.getMessage() + "]";
+        return "Response [success=" + success + ", errorCode=" + errorMessage.getCode() + ", errorMessage=" + errorMessage.getMessage() + "]";
     }
 
     public Response() {
         this.success = true;
-        this.error = null;
+        this.errorMessage = null;
     }
 
-    public Response(BaseException error) {
+    public Response(BaseException exception) {
         this.success = false;
-        this.error = error;
+        this.errorMessage = new ErrorMessage(exception.getCode(), exception.getMessage());
     }
 
     public boolean isSuccess() {
         return success;
     }
 
-    public BaseException getError() {
-        return error;
+    public ErrorMessage getErrorMessage() {
+        return errorMessage;
     }
 }

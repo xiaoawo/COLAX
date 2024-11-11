@@ -27,7 +27,7 @@ public class BaseException extends RuntimeException {
         this.code = errCode;
     }
 
-    public String getErrorCode() {
+    public String getCode() {
         return code;
     }
 
