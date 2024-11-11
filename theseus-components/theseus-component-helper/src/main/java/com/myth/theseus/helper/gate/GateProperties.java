@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "myth.theseus.gate")
 public class GateProperties {
 
-	private static final String[] DEFAULT_FILTERS = {"entranceLogGateFilter", "validationGateFilter"};
+	private static final String[] DEFAULT_FILTERS = {"catchExceptionGateFilter", "entranceLogGateFilter", "validationGateFilter"};
 
 	private String[] filters;
 
